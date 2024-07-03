@@ -1,6 +1,7 @@
 .home{
-    background-color: lightblue;
-    .title{
-        font-weight: 800;
+    display: flex;
+
+    .homeContainer{
+        flex: 6;
     }
 }
