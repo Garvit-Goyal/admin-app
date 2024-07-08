@@ -23,11 +23,64 @@
 
     .center{
         padding-left: 10px;
+        padding-right: 10px;
 
         ul{
             list-style: none;
             margin: 0;
             padding: 0;
+
+
+            .title{
+                font-size: 10px;
+                font-weight: bold;
+                color: #999;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: rgb(167, 213, 250);
+                }
+
+                .icon{
+                    font-size: 20px;
+                }
+
+                span{
+                    font-size: 13px;
+                    font-weight: 400;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        .colorOption{
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 5px;
+
+            &:nth-child(1){
+                background-color: black;
+            }
+            &:nth-child(2){
+                background-color: white;
+            }
         }
     }
 }
