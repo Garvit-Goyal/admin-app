@@ -1,0 +1,79 @@
+.featured{
+    flex: 2;
+    box-shadow: 0px 0px 5px 3px rgba(68, 68, 68, 0.2);
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(68, 68, 68,0.2);
+    padding: 10px;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: rgb(0, 63, 198);
+
+        .title{
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .icon{
+            color: black;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .featuredChart{
+            width: 100px;
+            height: 100px;
+        }
+
+        .title{
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .amount{
+            font-size: 28px;
+        }
+
+        .description{
+            font-size: 12px;
+        }
+        
+        .summary{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .item{
+                text-align: center;
+
+                .itemTitle{
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: rgb(0, 63, 198);
+                }
+
+                .itemResult{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    font-size: 14px;
+
+                    &.positive{
+                        color: green;
+                    }
+                    &.negative{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
