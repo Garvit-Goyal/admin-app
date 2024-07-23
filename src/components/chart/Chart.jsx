@@ -8,7 +8,7 @@ const data = [
     },
     {
         Month: "February",
-        Total : 15000
+        Total : 45000
     },
     {
         Month: "March",
@@ -33,14 +33,14 @@ const Chart = ({title,aspect}) => {
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
                         <linearGradient id="total" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="rgb(0, 63, 198)" stopOpacity={0.8} />
-                            <stop offset="95%" stopColor="rgb(0, 63, 198)" stopOpacity={0.2} />
+                            <stop offset="5%" stopColor="rgb(223, 244, 254)" stopOpacity={0.8} />
+                            <stop offset="95%" stopColor="#004AAD" stopOpacity={0.4} />
                         </linearGradient>
                     </defs>
                     <XAxis dataKey="Month" stroke="black"/>
                     <CartesianGrid strokeDasharray="1 1" opacity={0.1} stroke="black"/>
                     <Tooltip />
-                    <Area type="monotone" dataKey="Total" stroke="rgb(0, 63, 198)" fillOpacity={1} fill="url(#total)" />
+                    <Area type="monotone" dataKey="Total" stroke="#004AAD" fillOpacity={1} fill="url(#total)" />
                 </AreaChart>
             </ResponsiveContainer>
         </div>

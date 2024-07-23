@@ -8,6 +8,8 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import ChatBubbleOutlineExitOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 
+import Avatar from "/Users/garvitgoyal/Developer/admin-app/src/assets/user-profile-icon.png";
+
 const Navbar = () => {
     return(
         <div className="navbar">
@@ -21,12 +23,12 @@ const Navbar = () => {
                         <LanguageOutlinedIcon className="icon"/>
                         English
                     </div>
-                    <div className="item">
+                    {/* <div className="item">
                         <DarkModeOutlinedIcon className="icon"/>
-                    </div>
-                    <div className="item">
+                    </div> */}
+                    {/* <div className="item">
                         <FullscreenExitOutlinedIcon className="icon"/>
-                    </div>
+                    </div> */}
                     <div className="item">
                         <NotificationsNoneOutlinedIcon className="icon"/>
                         <div className="counter">1</div>
@@ -39,7 +41,7 @@ const Navbar = () => {
                         <ListOutlinedIcon className="icon"/>
                     </div>
                     <div className="item">
-                        <img src="src/assets/user-profile-icon.png" alt="" className="avatar" />
+                        <img src={Avatar} alt="" className="avatar" />
                     </div>
                 </div>
             </div>

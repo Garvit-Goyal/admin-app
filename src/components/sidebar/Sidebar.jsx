@@ -12,79 +12,80 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import LogoutIcon from '@mui/icons-material/Logout';
 
+import logo from "/Users/garvitgoyal/Developer/admin-app/src/assets/StalkCash Logo (V1.0).jpg";
+
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
-    return(
+    return (
         <div className="sidebar">
             <div className="top">
-                <Link to={"/"} style={{textDecoration:"none", cursor:"pointer"}}>
-                    <span className="logo">StalkCash</span>
+                <Link to={"/"} style={{ textDecoration: "none", cursor: "pointer" }}>
+                    <span className="logo"><img src={logo} alt="" className="logoImg" />STALKCASH</span>
                 </Link>
             </div>
-            <hr/>
             <div className="center">
                 <ul>
                     <p className="title">MAIN</p>
                     <li>
-                        <DashboardIcon className="icon"/>
+                        <DashboardIcon className="icon" />
                         <span>Dashboard</span>
                     </li>
                     <p className="title">LISTS</p>
-                    <Link to={"/users"} style={{textDecoration:"none", color:"black"}}>
-                    <li>
-                        <GroupIcon className="icon"/>
-                        <span>Users</span>
-                    </li>
+                    <Link to={"/users"} style={{ textDecoration: "none", color: "black" }}>
+                        <li>
+                            <GroupIcon className="icon" />
+                            <span>Users</span>
+                        </li>
                     </Link>
                     <li>
-                        <StorefrontIcon className="icon"/>
+                        <StorefrontIcon className="icon" />
                         <span>Products</span>
                     </li>
                     <li>
-                        <AllInboxIcon className="icon"/>
+                        <AllInboxIcon className="icon" />
                         <span>Orders</span>
                     </li>
                     <li>
-                        <DeliveryDiningIcon className="icon"/>
+                        <DeliveryDiningIcon className="icon" />
                         <span>Delivery</span>
                     </li>
                     <p className="title">INFO</p>
                     <li>
-                        <QueryStatsIcon className="icon"/>
+                        <QueryStatsIcon className="icon" />
                         <span>Stats</span>
                     </li>
                     <li>
-                        <NotificationsActiveIcon className="icon"/>
+                        <NotificationsActiveIcon className="icon" />
                         <span>Notifications</span>
                     </li>
                     <p className="title">SERVICE</p>
                     <li>
-                        <SettingsSystemDaydreamIcon className="icon"/>
+                        <SettingsSystemDaydreamIcon className="icon" />
                         <span>System Health</span>
                     </li>
                     <li>
-                        <PsychologyIcon className="icon"/>
+                        <PsychologyIcon className="icon" />
                         <span>Logs</span>
                     </li>
                     <li>
-                        <SettingsIcon className="icon"/>
+                        <SettingsIcon className="icon" />
                         <span>Settings</span>
                     </li>
                     <p className="title">USER</p>
                     <li>
-                        <AccountCircleRoundedIcon className="icon"/>
+                        <AccountCircleRoundedIcon className="icon" />
                         <span>Profile</span>
                     </li>
                     <li>
-                        <LogoutIcon className="icon"/>
+                        <LogoutIcon className="icon" />
                         <span>Logout</span>
                     </li>
                 </ul>
             </div>
             <div className="bottom">
-                <div className="colorOption"></div>
-                <div className="colorOption"></div>
+                {/* <div className="colorOption"></div>
+                <div className="colorOption"></div> */}
             </div>
         </div>
     )
