@@ -22,7 +22,7 @@ const Sidebar = () => {
             <div className="top">
                 <Link to={"/"} style={{ textDecoration: "none", cursor: "pointer" }}>
                     <span className="logo">
-                        {/* <img src="{logo}" alt="" className="logoImg" /> */}
+                        <img src={logo} alt="" className="logoImg" />
                         STALKCASH
                     </span>
                 </Link>
