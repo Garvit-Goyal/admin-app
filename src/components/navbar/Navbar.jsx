@@ -8,7 +8,7 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import ChatBubbleOutlineExitOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 
-import Avatar from "/Users/garvitgoyal/Developer/admin-app/src/user-profile-icon.png";
+// import Avatar from "/Users/garvitgoyal/Developer/admin-app/src/user-profile-icon.png";
 
 const Navbar = () => {
     return(
