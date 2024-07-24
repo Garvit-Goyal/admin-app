@@ -12,7 +12,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import LogoutIcon from '@mui/icons-material/Logout';
 
-// import logo from "/Users/garvitgoyal/Developer/admin-app/src/StalkCash Logo (V1.0).jpg";
+import logo from "/Users/garvitgoyal/Developer/admin-app/src/StalkCash Logo (V1.0).jpg";
 
 import { Link } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const Sidebar = () => {
             <div className="top">
                 <Link to={"/"} style={{ textDecoration: "none", cursor: "pointer" }}>
                     <span className="logo">
-                        {/* <img src={logo} alt="" className="logoImg" /> */}
+                        <img src={logo} alt="" className="logoImg" />
                         STALKCASH
                     </span>
                 </Link>
