@@ -5,7 +5,7 @@ import { Height, WidthFull } from "@mui/icons-material";
 
 import { Link } from "react-router-dom";
 
-const Datatable = () => {
+const Datatable = ({headTitle}) => {
 
     const actionColumn = [{
         field: "action", headerName: "Action", width: 200, renderCell: () => {
@@ -25,7 +25,7 @@ const Datatable = () => {
         <div className="datatable">
             <Link to={"/users/new"} style={{ textDecoration: "none", color: "black" }}>
                 <div className="addNewUser">
-                    ADD NEW USER
+                    {headTitle}
                 </div>
             </Link>
             <DataGrid
@@ -33,7 +33,7 @@ const Datatable = () => {
                 columns={userColumns.concat(actionColumn)}
                 initialState={{
                     pagination: {
-                        paginationModel: { page: 0, pageSize: 10 },
+                        paginationModel: { page: 0, pageSize: 5 },
                     },
                 }}
                 pageSizeOptions={[5, 10]}
