@@ -33,8 +33,8 @@ const Chart = ({title,aspect}) => {
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
                         <linearGradient id="total" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="rgb(223, 244, 254)" stopOpacity={0.8} />
-                            <stop offset="95%" stopColor="#004AAD" stopOpacity={0.4} />
+                            <stop offset="20%" stopColor="rgb(223, 244, 254)" stopOpacity={0.8} />
+                            <stop offset="80%" stopColor="#004AAD" stopOpacity={0.6} />
                         </linearGradient>
                     </defs>
                     <XAxis dataKey="Month" stroke="black"/>

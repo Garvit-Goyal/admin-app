@@ -13,7 +13,6 @@ const New = ({ input, title }) => {
         <div className="new">
             <Sidebar />
             <div className="newContainer">
-                <Navbar />
                 <div className="top">
                     <h1 className="title">{title}</h1>
                 </div>

@@ -24,8 +24,8 @@
                     right: 0;
                     padding: 5px;
                     font-size: 12px;
-                    color: #7451f8;
-                    background-color: #7551f818;
+                    color: #004AAD;
+                    background-color: rgb(223, 244, 254);
                     cursor: pointer;
                     border-radius: 0px 0px 0px 5px;
                 }
@@ -67,6 +67,10 @@
 
             .right {
                 flex: 2;
+
+                .title{
+                    color: black;
+                }
             }
         }
 

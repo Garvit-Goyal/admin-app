@@ -53,6 +53,7 @@
                 align-items: center;
                 padding: 5px;
                 cursor: pointer;
+                position: relative;
 
                 &:hover {
                     background-color: rgb(181, 222, 255);
@@ -60,6 +61,23 @@
 
                 .icon {
                     font-size: 20px;
+                }
+
+                .counter{
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    padding: 2px;
+                    background-color: rgb(255, 76, 76);
+                    color: white;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: auto;
+                    bottom: 20px;
+                    left: 22.5px;
                 }
 
                 span {

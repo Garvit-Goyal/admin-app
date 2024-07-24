@@ -8,7 +8,6 @@ const List = () => {
         <div className="list">
             <Sidebar />
             <div className="listContainer">
-                <Navbar/>
                 <Datatable/>
             </div>
         </div>

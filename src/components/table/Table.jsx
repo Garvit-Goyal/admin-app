@@ -62,7 +62,7 @@ const List = () => {
     ];
     return (
         <TableContainer component={Paper} className="table">
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <Table sx={{ minWidth: 650, overflow:"hidden" }} aria-label="simple table">
                 <TableHead>
                     <TableRow style={{backgroundColor:"rgb(223, 244, 254)"}}>
                         <TableCell className="tableCell">Tracking ID</TableCell>
