@@ -21,7 +21,10 @@ const Sidebar = () => {
         <div className="sidebar">
             <div className="top">
                 <Link to={"/"} style={{ textDecoration: "none", cursor: "pointer" }}>
-                    <span className="logo"><img src={logo} alt="" className="logoImg" />STALKCASH</span>
+                    <span className="logo">
+                        {/* <img src="{logo}" alt="" className="logoImg" /> */}
+                        STALKCASH
+                    </span>
                 </Link>
             </div>
             <div className="center">
