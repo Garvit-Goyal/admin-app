@@ -28,7 +28,7 @@ const Widget = ({ type }) => {
             data = {
                 title: "ORDERS",
                 isMoney: false,
-                link: "VIEW ALL USERS",
+                link: "VIEW ALL ORDERS",
                 icon: <ShoppingCartOutlinedIcon className="icon" />
             };
             break;

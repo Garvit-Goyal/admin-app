@@ -1,0 +1,36 @@
+.login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 225px;
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+
+        button{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            color: white;
+            background-color: #004AAD;
+            border: none;
+        }
+
+        span{
+            text-align: center;
+            color: red;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}
