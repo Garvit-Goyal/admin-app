@@ -1,74 +1,74 @@
-import "./widget.scss"
+import { Link } from "react-router-dom";
 
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
-import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined'
-import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined'
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
-import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined'
+import "./widget.scss";
+import {KeyboardArrowUp, PersonOutlined, AccountBalanceWalletOutlined, ShoppingCartOutlined, MonetizationOnOutlined}   from "@mui/icons-material";
 
 const Widget = ({ type }) => {
-
     let data;
 
     //temporary
-    const amount = 12341
-    const percentage = 20
+    const amount = 12341;
+    const percentage = 20;
 
     switch (type) {
         case "user":
             data = {
                 title: "USERS",
                 isMoney: false,
-                link: "SEE ALL USERS",
-                icon: <PersonOutlinedIcon className="icon" />
-                // For separate styling of each logo icon: <PersonOutlinedIcon className="icon" style={background-color:"",color: ""}/>
+                desc: "SEE ALL USERS",
+                icon: <PersonOutlined className="icon" />,
+                link: "/users",
             };
             break;
         case "order":
             data = {
                 title: "ORDERS",
                 isMoney: false,
-                link: "VIEW ALL ORDERS",
-                icon: <ShoppingCartOutlinedIcon className="icon" />
+                desc: "VIEW ALL ORDERS",
+                icon: <ShoppingCartOutlined className="icon" />,
             };
             break;
         case "earning":
             data = {
                 title: "EARNINGS",
                 isMoney: true,
-                link: "VIEW NET EARNING",
-                icon: <MonetizationOnOutlinedIcon className="icon" />
+                desc: "VIEW NET EARNING",
+                icon: <MonetizationOnOutlined className="icon" />,
             };
             break;
         case "balance":
             data = {
                 title: "BALANCE",
-                isMoney: false,
-                link: "SEE DETAILS",
-                icon: <AccountBalanceWalletOutlinedIcon className="icon" />
+                isMoney: true,
+                desc: "SEE DETAILS",
+                icon: <AccountBalanceWalletOutlined className="icon" />,
             };
             break;
         default:
             break;
-
     }
 
     return (
         <div className="widget">
             <div className="left">
                 <span className="title">{data.title}</span>
-                <span className="counter">{data.isMoney && "Rs"} {amount}</span>
-                <span className="link">{data.link}</span>
+                <span className="counter">
+                    {data.isMoney && "Rs"} {amount}
+                </span>
+                <Link to={data.link} style={{ textDecoration: "none", cursor: "pointer", color: "black" }}>
+                    <span className="link">{data.desc}</span>
+                </Link>
             </div>
             <div className="right">
                 <div className="percentage positive">
-                    <KeyboardArrowUpIcon />
-                    {percentage}{"%"}
+                    <KeyboardArrowUp />
+                    {percentage}
+                    {"%"}
                 </div>
                 {data.icon}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Widget
+export default Widget;

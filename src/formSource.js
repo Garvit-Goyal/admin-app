@@ -1,41 +1,41 @@
 export const userInputs = [
     {
-        id: 1,
+        id: "username",
         label: "USERNAME",
         type: "text",
         placeholder: "john_doe",
     },
     {
-        id: 2,
+        id: "displayName",
         label: "FULL NAME",
         type: "text",
         placeholder: "John Doe",
     },
     {
-        id: 3,
+        id: "email",
         label: "EMAIL",
         type: "mail",
         placeholder: "john_doe@gmail.com",
     },
     {
-        id: 4,
+        id: "phone",
         label: "PHONE",
         type: "text",
         placeholder: "+1 234 567 89",
     },
     {
-        id: 5,
+        id: "password",
         label: "PASSWORD",
         type: "password",
     },
     {
-        id: 6,
+        id: "address",
         label: "ADDRESS",
         type: "text",
         placeholder: "Elton St. 216 NewYork",
     },
     {
-        id: 7,
+        id: "country",
         label: "COUNTRY",
         type: "text",
         placeholder: "USA",
